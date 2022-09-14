@@ -13,7 +13,7 @@
 
 
 <?php
-
+ //Deze form is om info in te vullen en alles een input benaming te geven
 echo "<form action='create_client.php' method= 'post'>";
 echo "<label for= 'naam'>Naam</label>";
 echo "<input type= 'text' class= 'form-control' name='naamInput'>";
