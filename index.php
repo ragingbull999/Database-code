@@ -10,7 +10,7 @@
  </head>
  
  <body>
- 
+  // deze knoppen gaan naar de create,read paginas
   <button><a href="drinks.php">drinks</a></button>
   <button><a href="bon.php">bonnen</a></button>
   <button><a href="clients.php">clients</a></button>
