@@ -18,17 +18,17 @@
  	   $Clientemail = $_POST ["emailInput"];
  	   $Clientadres = $_POST ["adresInput"];
  	   $CLienttelefoon = $_POST ["telefoonInput"];
-
+// met require_once roep ik de document om een connect uit te voeren
  	   require_once "connectDB.php";
 
  	   $sql = $conn→prepare ("insert into clients values (:client_id, :naam, :email, :adres, :telefoon)");
-
+// hier binden we de secties van de database met onze variable via bindparam
  	   $sql→bindParam(":client_id", $Clientid);
  	   $sql→bindParam(":naam", $Clientnaam);
  	   $sql→bindParam(":email", $Clientemail);
  	   $sql→bindParam(":adres", $Clientadres);
  	   $sql→bindParam(":telefoon", $Clienttelefoon);
-
+// met execute() geven ik aan dat ik de ingevulde info in de database wil inserten
  	   $sql→execute();
  	   echo "<a href'index.php'>terug naar hoofdmenu</a>";
  	  ?>
